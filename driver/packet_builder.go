@@ -59,8 +59,8 @@ func MakeColorSection(colors []color.Color) []byte {
 	// for each color, add the rgb values to the color section
 	for i, c := range colors {
 		var r, g, b, _ = c.RGBA()
-		colorSection[i*3] = byte(r)
-		colorSection[i*3+1] = byte(g)
+		colorSection[i*3] = byte(g)
+		colorSection[i*3+1] = byte(r)
 		colorSection[i*3+2] = byte(b)
 	}
 
