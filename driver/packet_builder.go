@@ -83,12 +83,6 @@ func MakeColorPacket(readableDeviceId int, mode CommandType, colors []color.Colo
 		packet[i] = 0b00000000
 	}
 
-	//var out = ""
-	//for _, b := range packet {
-	//	out += fmt.Sprintf("%02x", b)
-	//	out += ""
-	//}
-	//fmt.Println(out)
 
 	return packet
 }
